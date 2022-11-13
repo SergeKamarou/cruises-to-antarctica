@@ -1,0 +1,153 @@
+.page-footer {
+  width: 100%;
+  min-height: 138px;
+  background-color: $color-tangaroa;
+  padding-top: 48px;
+
+  @include vp-1023 {
+    min-height: 120px;
+    padding-top: 43px;
+  }
+
+  @include vp-767 {
+    min-height: 283px;
+    padding-top: 43px;
+  }
+
+}
+
+.page-footer__wrap {
+  display: flex;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.page-footer__logo {
+  padding-left: 4px;
+  width: 80px;
+
+  @include vp-1023 {
+    width: 50px;
+
+    svg {
+      width: 38px;
+      height: 20px;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 16px;
+  }
+}
+
+.page-footer__nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 34px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  @include vp-1023 {
+    padding: 0 10px 0 13px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+}
+
+.page-footer__nav-item {
+  &:not(:last-child) {
+    margin-right: 33px;
+
+    @include vp-1023 {
+      margin-right: 24px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 8px;
+    }
+  }
+}
+
+.page-footer__nav-link {
+  @include font(500, 16px, 20px);
+  color: $color-alice-blue;
+
+  @include hover-focus {
+    color: $color-deep-sky-blue;
+    ;
+  }
+
+  @include vp-1023 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.page-footer__social-list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 160px;
+  max-width: 20%;
+  padding-top: 10px;
+  padding-left: 0;
+
+  @include vp-767 {
+    justify-content: flex-start;
+  }
+}
+
+.page-footer__social-item {
+  margin-bottom: 5px;
+  display: block;
+
+  &:not(:first-child) {
+    margin-left: 22px;
+  }
+}
+
+.page-footer__social-link {
+  svg {
+    fill: $color-alice-blue;
+  }
+
+  @include hover-focus {
+    svg {
+      fill: $color-deep-sky-blue;
+    }
+  }
+
+  @include vp-1023 {
+   &--ok {
+    svg {
+      width: 10px;
+      height: 16px;
+    }
+   }
+
+   &--dzen {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+   }
+
+   &--reddit {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+   }
+  }
+}

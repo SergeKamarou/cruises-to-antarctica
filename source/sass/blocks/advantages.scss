@@ -1,0 +1,150 @@
+.advantages {
+  width: 100%;
+  min-height: 562px;
+  background-color: $color-pattens-blue;
+  background-image: url("../img/advantages-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include retina {
+    background-image: url("../img/advantages-bg-desktop@2x.png");
+  }
+}
+
+.advantages__wrap {
+  padding-top: 110px;
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 92px;
+    padding-bottom: 60px;
+  }
+}
+
+.advantages__main-title {
+  @include font(600, 28px, 42px);
+  margin: 0 0 49px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 31px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, calc($column-width-desk*4 + $gutter-width-desk*3));
+  gap: $gutter-width-desk;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(3, calc($column-width-tablet*2 + $gutter-width-tablet));
+    gap: $gutter-width-tablet;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  background-color: $color-alice-blue;
+  min-height: 241px;
+  padding: 81px 30px 15px;
+
+  @include vp-1023 {
+    min-height: 310px;
+    padding: 70px 15px 15px 20px;
+  }
+
+  @include vp-767 {
+    min-height: 250px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 30px;
+    left: 30px;
+
+    @include vp-1023 {
+      top: 26px;
+      left: 20px;
+    }
+  }
+
+  &--ship {
+    &::before {
+      width: 27px;
+      background-image: url("../img/svg/ship.svg");
+
+      @include vp-1023 {
+        width: 21px;
+        height: 26px;
+      }
+    }
+  }
+
+  &--tick {
+    &::before {
+      width: 38px;
+      background-image: url("../img/svg/tick.svg");
+
+      @include vp-1023 {
+        width: 27px;
+        height: 26px;
+      }
+    }
+  }
+
+  &--boat {
+    &::before {
+      width: 44px;
+      background-image: url("../img/svg/boat.svg");
+
+      @include vp-1023 {
+        width: 36px;
+        height: 26px;
+      }
+    }
+  }
+
+  h3 {
+    @include font(500, 18px, 27px);
+    margin: 0 0 7px;
+
+    @include vp-1023 {
+      line-height: 25px;
+      margin: 0 0 10px;
+    }
+
+    @include vp-767 {
+      padding-right: 55px;
+    }
+  }
+
+  p {
+    @include font(400, 14px, 20px);
+    margin: 0;
+    padding: 0;
+  }
+}

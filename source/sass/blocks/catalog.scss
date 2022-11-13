@@ -1,0 +1,246 @@
+.catalog__wrap {
+  padding-top: 85px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+}
+
+.catalog__title {
+  @include font(600, 28px, 42px);
+  text-align: center;
+  margin: 0 0 49px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 31px;
+  }
+}
+
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(4, calc(260/1130*100%));
+  column-gap: calc(30/1130*100%);
+  row-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, calc(309/648*100%));
+    column-gap: calc(30/648*100%);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+.catalog__item {
+  min-height: 386px;
+
+  @include hover-focus {
+    .catalog__card-content {
+      scale: 1;
+    }
+  }
+
+  &:focus-within {
+    .catalog__card-content {
+      scale: 1;
+    }
+}
+}
+
+.catalog__card {
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  position: relative;
+  height: 100%;
+
+
+  h3 {
+    margin: 0;
+    position: absolute;
+    bottom: 22px;
+    left: 30px;
+
+    @include vp-1023 {
+      bottom: 26px;
+      left: 35px;
+    }
+
+    @include vp-767 {
+      bottom: 17px;
+      left: 26px;
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--astoria {
+    img {
+      object-position: 56% 50%;
+
+      @include vp-1023 {
+        object-position: 58% 50%;
+      }
+
+      @include vp-767 {
+        object-position: 57% 50%;
+      }
+    }
+  }
+
+  &--odysseus {
+    img {
+      object-position: 39% 50%;
+
+      @include vp-1023 {
+        object-position: 65% 50%;
+      }
+
+      @include vp-767 {
+        object-position: 36% 50%;
+      }
+    }
+  }
+
+  &--olympia {
+    img {
+      object-position: 40% 50%;
+
+      @include vp-1023 {
+        object-position: 50% 50%;
+      }
+    }
+  }
+
+  &--aurora {
+    img {
+      object-position: 42% 50%;
+
+      @include vp-1023 {
+        object-position: 50% 50%;
+      }
+    }
+  }
+
+  &--leonor {
+    img {
+      object-position: 57% 50%;
+
+      @include vp-1023 {
+        object-position: 32% 50%;
+      }
+
+      @include vp-767 {
+        object-position: 58% 50%;
+      }
+    }
+  }
+
+  &--minion {
+    img {
+      object-position: 40.6% 50%;
+
+      @include vp-1023 {
+        object-position: 72% 50%;
+      }
+
+      @include vp-767 {
+        object-position: 46% 50%;
+      }
+    }
+  }
+}
+
+.catalog__card-title {
+  @include font(500, 18px, 27px);
+  color: $color-alice-blue;
+}
+
+.catalog__card-content {
+  background-color: $color-tangaroa;
+  position: relative;
+  height: 100%;
+  scale: 0;
+  transition: scale $trans-100;
+  padding: 28px 15px 35px 25px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1023 {
+    padding: 28px 15px 35px 35px;
+  }
+
+  @include vp-767 {
+    padding: 28px 15px 35px 25px;
+  }
+
+  p {
+    @include font(500, 18px, 27px);
+    color: $color-alice-blue;
+    margin: 0 0 14px;
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  dt {
+    @include font(500, 14px, 20px);
+    color: $color-alice-blue;
+  }
+
+  dd {
+    @include font(400, 14px, 20px);
+    color: $color-alice-blue;
+    margin: 0 0 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    margin-top: auto;
+    width: 96%;
+    min-height: 40px;
+    background-color: $color-alice-blue;
+    border: none;
+    @include font(600, 14px, 21px);
+    color: $color-tangaroa;
+    padding: 5px 10px;
+
+    @include hover-focus {
+      background-color: $color-deep-sky-blue;
+    }
+
+    @include vp-1023 {
+      width: 93%;
+    }
+
+    @include vp-767 {
+      width: 96%;
+    }
+  }
+}

@@ -12,12 +12,13 @@ body {
 }
 
 html {
+  font-family: $ff-basic;
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  color: $color-tangaroa;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,13 +30,13 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   height: 100%;
-
-  background-color: $color-default-white;
+  background-color: $color-alice-blue;
 }
 
 a {
-  color: $color-default-black;
+  color: $color-tangaroa;
   text-decoration: none;
 }
 
