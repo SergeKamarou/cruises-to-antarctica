@@ -41,8 +41,13 @@ const initMobileMenu = () => {
 
 function closeMenu() {
   menuToggleElement.checked = false;
-  menuOverlayElement.classList.toggle('is-active');
-  document.body.classList.toggle('scroll-lock');
+  if (menuOverlayElement.classList.contains('is-active')) {
+    menuOverlayElement.classList.remove('is-active');
+  }
+
+  if (document.body.classList.contains('scroll-lock')) {
+    document.body.classList.remove('scroll-lock');
+  }
 }
 
 // if (menuToggleElement.checked) {

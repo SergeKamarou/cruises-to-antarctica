@@ -1,0 +1,102 @@
+.contacts { }
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding-bottom: 65px;
+  }
+}
+
+.contacts__map {
+  width: calc(560/1160*100%);
+  height: 306px;
+  background: url("../img/map-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include retina {
+  background-image: url("../img/map-desk@2x.png");
+  }
+
+  @include vp-1023 {
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 316px;
+    order: 1;
+  }
+}
+
+.contacts__text-wrap {
+  width: calc(500/1160*100%);
+  padding: 75px 0 20px;
+
+  @include vp-1023 {
+  width: calc(324/678*100%);
+  padding-top: 66px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 35px;
+  }
+}
+
+.contacts__title {
+  @include font(500, 18px, 27px);
+  margin: 0 0 32px;
+
+  @include vp-1023 {
+    margin: 0 0 27px;
+  }
+}
+
+.contacts__address {
+  @include font(400, 16px, 24px);
+  margin: 0 0 21px;
+  padding: 0 0 0 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/pin.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.contacts__phone {
+  @include font(400, 16px, 24px);
+  position: relative;
+  padding: 0 0 0 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+}
