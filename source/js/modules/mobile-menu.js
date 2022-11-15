@@ -6,13 +6,11 @@ const breakpoint = window.matchMedia('(max-width:766px)');
 
 const menuClickHandler = (evt) => {
   if (evt.target.closest('[data-menu-close]') || evt.target.closest('[data-nav-link]')) {
-    // stopPropagation();
     closeMenu();
   }
 };
 
 const initMobileMenu = () => {
-  // debugger
   if (mobileMenuElement && breakpoint.matches) {
     if (menuToggleElement.checked) {
       menuOverlayElement.classList.add('is-active');
@@ -22,7 +20,6 @@ const initMobileMenu = () => {
       if (evt.target.checked) {
         menuOverlayElement.classList.add('is-active');
         document.body.classList.add('scroll-lock');
-        // console.log(evt.target.checked);
       } else {
         menuOverlayElement.classList.remove('is-active');
         document.body.classList.remove('scroll-lock');
@@ -50,13 +47,4 @@ function closeMenu() {
   }
 }
 
-// if (menuToggleElement.checked) {
-//   document.body.classList.add('scroll-lock');
-//   // document.addEventListener('click', menuClickHandler);
-//   if (evt.target.closest('[data-menu-close]')) {
-//     menuToggleElement.checked = false;
-//   }
-// } else {
-//   document.body.classList.remove('scroll-lock');
-// }
 export {initMobileMenu};

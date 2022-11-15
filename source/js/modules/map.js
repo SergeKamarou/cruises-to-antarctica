@@ -9,10 +9,18 @@ const initMap = () => {
 
     const placemark = new ymaps.Placemark([59.93868425386648, 30.3230366711649], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/svg/pin.svg',
+      iconImageHref: 'img/svg/pin.svg',
       iconImageSize: [18, 22],
       iconImageOffset: [-9, -22],
     });
+
+    map.controls.remove('searchControl');
+    map.controls.remove('geolocationControl');
+    map.controls.remove('trafficControl');
+    map.controls.remove('typeSelector');
+    map.controls.remove('fullscreenControl');
+    map.controls.remove('zoomControl');
+    map.controls.remove('rulerControl');
 
     map.geoObjects.add(placemark);
   }

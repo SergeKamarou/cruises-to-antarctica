@@ -13,15 +13,15 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-alice-blue:                  #f9fbfd;
 $color-tangaroa:                    #011c40;
 $color-solitude:                    #e3ecf6;
-$color-dark-cerulean:               #004F8C;
-$color-air-force-blue:              #5C8EB5;
+$color-dark-cerulean:               #004f8c;
+$color-denim:                       #1566c4;
 $color-deep-sky-blue:               #00b2ff;
 $color-pattens-blue:                #cfe4fb;
+$color-jordy-blue:                  #73b2df;
 
 // Gradient
 
-// $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$card-bg:                           linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+$card-bg:                           linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
 
 // Typography
 // ---------------------------------
@@ -64,7 +64,7 @@ $vp-1920:                           1920px;
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
 
-$column-width-desk: calc(60/1160 * 100%);
-$gutter-width-desk: calc(40/1160 * 100%);
-$column-width-tablet: calc(88/678 * 100%);
-$gutter-width-tablet: calc(30/678 * 100%);
+$column-width-desk: calc(60 / 1160 * 100%);
+$gutter-width-desk: calc(40 / 1160 * 100%);
+$column-width-tablet: calc(88 / 678 * 100%);
+$gutter-width-tablet: calc(30 / 678 * 100%);

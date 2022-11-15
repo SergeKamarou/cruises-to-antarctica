@@ -6,44 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
-  <link href="styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="../source/styles.css">
+  <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU%22%3E"></script> -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
-
-
-  <!--  -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("img/pixel-desk.png");
-    }
-
-    /* Tablet */
-    @media (max-width: 1023px) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("img/pixel-tablet.png");
-      }
-    }
-
-    /* Desktop */
-    @media (max-width: 767px) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("img/pixel-mob.png");
-      }
-    }
-  </style>
-  <!--  -->
 </head>
 
 <body>
@@ -119,6 +87,14 @@
         </div>
       </section>
       <section class="advantages" id="advantages">
+        <div class="advantages__bg-wrap">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/advantages-mobile.webp 1x, img/advantages-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/advantages-tablet.webp 1x, img/advantages-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/advantages-desktop.webp 1x, img/advantages-desktop@2x.webp 2x">
+            <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" alt="Антарктида.">
+          </picture>
+        </div>
         <div class="advantages__wrap container">
           <h2 class="advantages__main-title">Преимущества</h2>
           <ul class="advantages__list">
@@ -148,7 +124,7 @@
               <div class="catalog__card catalog__card--astoria">
                   <picture>
                     <source type="image/webp" srcset="img/card-1.webp 1x, img/card-1@2x.webp 2x">
-                    <img src="img/card-1.jpg" srcset="img/card-1@2x.jpg 2x" width="557" height="386" alt="Антарктида">
+                    <img src="img/card-1.jpg" srcset="img/card-1@2x.jpg 2x" width="557" height="386" alt="Антарктида.">
                   </picture>
                   <h3 class="catalog__card-title">Круиз "Астория"</h3>
                 <div class="catalog__card-content">
@@ -171,7 +147,7 @@
               <div class="catalog__card">
                 <picture>
                   <source type="image/webp" srcset="img/card-2.webp 1x, img/card-2@2x.webp 2x">
-                  <img src="img/card-2.jpg" srcset="img/card-2@2x.jpg 2x" width="557" height="386" alt="Антарктида">
+                  <img src="img/card-2.jpg" srcset="img/card-2@2x.jpg 2x" width="557" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз “Элайн”</h3>
                 <div class="catalog__card-content">
@@ -194,7 +170,7 @@
               <div class="catalog__card">
                 <picture>
                   <source type="image/webp" srcset="img/card-3.webp 1x, img/card-3@2x.webp 2x">
-                  <img src="img/card-3.jpg" srcset="img/card-3@2x.jpg 2x" width="518" height="386" alt="Антарктида">
+                  <img src="img/card-3.jpg" srcset="img/card-3@2x.jpg 2x" width="518" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Атлантис"</h3>
                 <div class="catalog__card-content">
@@ -219,7 +195,7 @@
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/card-4-mob.webp 1x, img/card-4-mob@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-4-tablet.webp 1x, img/card-4-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/card-4.webp 1x, img/card-4@2x.webp 2x">
-                  <img src="img/card-4.jpg" srcset="img/card-4@2x.jpg 2x" width="560" height="386" alt="Антарктида">
+                  <img src="img/card-4.jpg" srcset="img/card-4@2x.jpg 2x" width="560" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Одиссей"</h3>
                 <div class="catalog__card-content">
@@ -244,7 +220,7 @@
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/card-5-mob.webp 1x, img/card-5-mob@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-5-tablet.webp 1x, img/card-5-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/card-5.webp 1x, img/card-5@2x.webp 2x">
-                  <img src="img/card-5.jpg" srcset="img/card-5@2x.jpg 2x" width="553" height="386" alt="Антарктида">
+                  <img src="img/card-5.jpg" srcset="img/card-5@2x.jpg 2x" width="553" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Олимпия"</h3>
                 <div class="catalog__card-content">
@@ -267,7 +243,7 @@
               <div class="catalog__card catalog__card--aurora">
                 <picture>
                   <source type="image/webp" srcset="img/card-6.webp 1x, img/card-6@2x.webp 2x">
-                  <img src="img/card-6.jpg" srcset="img/card-6@2x.jpg 2x" width="509" height="386" alt="Антарктида">
+                  <img src="img/card-6.jpg" srcset="img/card-6@2x.jpg 2x" width="509" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Аврора"</h3>
                 <div class="catalog__card-content">
@@ -292,7 +268,7 @@
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/card-7-mob.webp 1x, img/card-7-mob@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-7-tablet.webp 1x, img/card-7-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/card-7.webp 1x, img/card-7@2x.webp 2x">
-                  <img src="img/card-7.jpg" srcset="img/card-7@2x.jpg 2x" width="514" height="386" alt="Антарктида">
+                  <img src="img/card-7.jpg" srcset="img/card-7@2x.jpg 2x" width="514" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Леонор"</h3>
                 <div class="catalog__card-content">
@@ -317,7 +293,7 @@
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/card-8-mob.webp 1x, img/card-8-mob@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-8-tablet.webp 1x, img/card-8-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/card-8.webp 1x, img/card-8@2x.webp 2x">
-                  <img src="img/card-8.jpg" srcset="img/card-8@2x.jpg 2x" width="557" height="386" alt="Антарктида">
+                  <img src="img/card-8.jpg" srcset="img/card-8@2x.jpg 2x" width="557" height="386" alt="Антарктида.">
                 </picture>
                 <h3 class="catalog__card-title">Круиз "Минион - 1"</h3>
                 <div class="catalog__card-content">
@@ -342,10 +318,10 @@
       <section class="booking" id="booking">
         <div class="booking__bg-wrap">
           <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/booking-mobile.webp 1x, img/booking-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/booking-mobile.webp 1x, img/booking-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/booking-tablet.webp 1x, img/booking-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/booking.webp 1x, img/booking@2x.webp 2x">
-            <img src="img/booking.jpg" srcset="img/booking@2x.jpg 2x" width="557" height="386" alt="Антарктида">
+            <img src="img/booking.jpg" srcset="img/booking@2x.jpg 2x" width="557" height="386" alt="Антарктида.">
           </picture>
         </div>
           <div class="booking__wrap container">
@@ -356,14 +332,14 @@
           </div>
           <div class="booking__form-wrap">
             <form action="https://echo.htmlacademy.ru/" method="post" data-form-booking>
-              <h3 class="booking__form-title">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h2>
+              <h3 class="booking__form-title">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
               <div class="booking__field-wrap">
                 <label class="visually-hidden" for="name">Имя.</label>
                 <input id="name" name="name" type="text" minlength="1" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ\s\-w]{1,99}" required>
               </div>
               <div class="booking__field-wrap">
                 <label class="visually-hidden" for="phone">Телефон.</label>
-                <input id="phone" name="phone" type="tel" placeholder="Телефон" minlength="16" data-input-tel required>
+                <input id="phone" name="phone" type="tel" placeholder="Телефон" pattern="[0-9]{11,}" title="Номер должен состоять только из цифр" data-input-tel required>
               </div>
               <label class="visually-hidden" for="email">Электронная почта.</label>
               <input id="email" name="email" type="email" placeholder="Email" minlength="6" data-input-email required>
@@ -377,7 +353,7 @@
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Контакты.</h2>
         <div class="contacts__wrap container">
           <div class="contacts__map" id="map"></div>
           <div class="contacts__text-wrap">
@@ -395,18 +371,18 @@
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <ul class="page-footer__nav-list" data-mobile-menu>
+        <ul class="page-footer__nav-list">
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="#">Преимущества</a>
+            <a class="page-footer__nav-link" href="#advantages">Преимущества</a>
           </li>
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="#">Направления</a>
+            <a class="page-footer__nav-link" href="#travels">Направления</a>
           </li>
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="#">Ближайшие круизы</a>
+            <a class="page-footer__nav-link" href="#catalog">Ближайшие круизы</a>
           </li>
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="#">Контакты</a>
+            <a class="page-footer__nav-link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <ul class="page-footer__social-list">
@@ -415,7 +391,7 @@
               <svg width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#ok"></use>
               </svg>
-              <span class="visually-hidden">Одноклассники</span>
+              <span class="visually-hidden">Одноклассники.</span>
             </a>
           </li>
           <li class="page-footer__social-item">
@@ -423,7 +399,7 @@
               <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#dzen"></use>
               </svg>
-              <span class="visually-hidden">Дзен</span>
+              <span class="visually-hidden">Дзен.</span>
             </a>
           </li>
           <li class="page-footer__social-item">
@@ -431,7 +407,7 @@
               <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#reddit"></use>
               </svg>
-              <span class="visually-hidden">Reddit</span>
+              <span class="visually-hidden">Reddit.</span>
             </a>
           </li>
         </ul>
@@ -439,8 +415,6 @@
     </footer>
   </div>
 
-
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU%22%3E"></script> -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

@@ -3,6 +3,7 @@
   min-height: 138px;
   background-color: $color-tangaroa;
   padding-top: 48px;
+  padding-bottom: 25px;
 
   @include vp-1023 {
     min-height: 120px;
@@ -13,7 +14,6 @@
     min-height: 283px;
     padding-top: 43px;
   }
-
 }
 
 .page-footer__wrap {
@@ -30,6 +30,10 @@
   padding-left: 4px;
   width: 80px;
 
+  svg {
+    fill: $color-alice-blue;
+  }
+
   @include vp-1023 {
     width: 50px;
 
@@ -41,6 +45,12 @@
 
   @include vp-767 {
     margin-bottom: 16px;
+  }
+
+  @include hover-focus {
+    svg {
+      fill: $color-deep-sky-blue;
+    }
   }
 }
 
@@ -80,10 +90,10 @@
 .page-footer__nav-link {
   @include font(500, 16px, 20px);
   color: $color-alice-blue;
+  user-select: none;
 
   @include hover-focus {
     color: $color-deep-sky-blue;
-    ;
   }
 
   @include vp-1023 {
@@ -113,7 +123,11 @@
   display: block;
 
   &:not(:first-child) {
-    margin-left: 22px;
+    margin-left: 28px;
+
+    @include vp-1023 {
+      margin-left: 22px;
+    }
   }
 }
 
@@ -129,25 +143,25 @@
   }
 
   @include vp-1023 {
-   &--ok {
-    svg {
-      width: 10px;
-      height: 16px;
+    &--ok {
+      svg {
+        width: 10px;
+        height: 16px;
+      }
     }
-   }
 
-   &--dzen {
-    svg {
-      width: 16px;
-      height: 16px;
+    &--dzen {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
     }
-   }
 
-   &--reddit {
-    svg {
-      width: 16px;
-      height: 16px;
+    &--reddit {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
     }
-   }
   }
 }

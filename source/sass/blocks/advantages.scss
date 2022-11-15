@@ -2,18 +2,24 @@
   width: 100%;
   min-height: 562px;
   background-color: $color-pattens-blue;
-  background-image: url("../img/advantages-bg-desktop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+}
 
-  @include retina {
-    background-image: url("../img/advantages-bg-desktop@2x.png");
+.advantages__bg-wrap {
+  width: 100%;
+  height: 100%;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .advantages__wrap {
   padding-top: 110px;
+  padding-bottom: 120px;
 
   @include vp-1023 {
     padding-top: 90px;
@@ -21,8 +27,8 @@
   }
 
   @include vp-767 {
-    padding-top: 92px;
-    padding-bottom: 60px;
+    padding-top: 57px;
+    padding-bottom: 63px;
   }
 }
 
@@ -49,11 +55,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, calc($column-width-desk*4 + $gutter-width-desk*3));
-  gap: $gutter-width-desk;
+  column-gap: $gutter-width-desk;
+  row-gap: 30px;
 
   @include vp-1023 {
     grid-template-columns: repeat(3, calc($column-width-tablet*2 + $gutter-width-tablet));
-    gap: $gutter-width-tablet;
+    column-gap: $gutter-width-tablet;
+    row-gap: 30px;
   }
 
   @include vp-767 {

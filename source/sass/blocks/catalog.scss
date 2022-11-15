@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-top: 60px;
+    padding-top: 57px;
     padding-bottom: 65px;
   }
 }
@@ -36,12 +36,12 @@
   padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  column-gap: calc(30/1130*100%);
+  column-gap: calc(30 / 1130 * 100%);
   row-gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(2, calc(309/648*100%));
-    column-gap: calc(30/648*100%);
+    grid-template-columns: repeat(2, calc(309 / 648 * 100%));
+    column-gap: calc(30 / 648 * 100%);
   }
 
   @include vp-767 {
@@ -63,11 +63,11 @@
     .catalog__card-content {
       scale: 1;
     }
-}
+  }
 }
 
 .catalog__card {
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   position: relative;
   height: 100%;
 
@@ -203,7 +203,7 @@
   }
 
   dl {
-    margin: 0;
+    margin: 0 0 6px;
   }
 
   dt {
@@ -222,14 +222,16 @@
   }
 
   button {
+    @include font(600, 14px, 21px);
     margin-top: auto;
     width: 96%;
     min-height: 40px;
     background-color: $color-alice-blue;
     border: none;
-    @include font(600, 14px, 21px);
     color: $color-tangaroa;
     padding: 5px 10px;
+    user-select: none;
+    cursor: pointer;
 
     @include hover-focus {
       background-color: $color-deep-sky-blue;
@@ -244,8 +246,3 @@
     }
   }
 }
-
-// #map {
-//   width: 100px;
-//   height: 100px;
-// }

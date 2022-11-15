@@ -1,6 +1,6 @@
 .page-header {
   width: 100%;
-  min-height: 650px;
+  min-height: 658px;
   position: relative;
 
   @include vp-1023 {
@@ -13,6 +13,10 @@
 }
 
 .page-header__logo {
+  color: $color-alice-blue;
+  fill: currentColor;
+  z-index: 1;
+
   @include vp-1023 {
     padding-top: 2px;
   }
@@ -39,7 +43,7 @@
 .page-header__background-wrap {
   width: 100%;
   height: 100%;
-  background-color: $color-air-force-blue;
+  background-color: $color-denim;
   position: absolute;
   z-index: -1;
   overflow: hidden;
@@ -48,11 +52,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
     @include vp-767 {
-      height: 568px;
+      height: 113%;
       object-position: 45.6% 0;
     }
   }
@@ -79,7 +82,6 @@
 
 .page-header__nav-list {
   list-style-type: none;
-  padding: 0;
   margin: 0;
   padding: 7px 0 0;
   display: flex;
@@ -92,17 +94,17 @@
   }
 
   @include vp-767 {
-      display: none;
-      position: absolute;
-      width: calc(100% - 35px);
-      height: 100vh;
-      background-color: $color-alice-blue;
-      right: 0;
-      top: 0;
-      padding: 75px 30px 30px 15px;
-      overflow: scroll;
-      flex-direction: column;
-    }
+    display: none;
+    position: absolute;
+    width: calc(100% - 35px);
+    height: 100vh;
+    background-color: $color-alice-blue;
+    right: 0;
+    top: 0;
+    padding: 75px 30px 30px 15px;
+    overflow: scroll;
+    flex-direction: column;
+  }
 }
 
 .page-header__toggle {
@@ -140,11 +142,11 @@
   }
 }
 
-.page-header__toggle[type="checkbox"]:checked ~ .page-header__nav-list{
+.page-header__toggle[type="checkbox"]:checked ~ .page-header__nav-list {
   @include vp-767 {
-  display: block;
+    display: block;
   }
- }
+}
 
 .page-header__toggle[type="checkbox"]:checked ~ .page-header__toggle-label {
   @include vp-767 {
@@ -173,12 +175,7 @@
   }
 }
 
-.page-header__logo {
-  fill: $color-alice-blue;
-  z-index: 1;
-}
-
-.page-header__toggle[type="checkbox"]:checked ~ .page-header__logo  {
+.page-header__toggle[type="checkbox"]:checked ~ .page-header__logo {
   @include vp-767 {
     color: $color-tangaroa;
     fill: currentColor;
@@ -205,6 +202,7 @@
   @include font(500, 16px, 20px);
   color: $color-alice-blue;
   text-shadow: 0 4px 4px rgba($color-default-black, 0.25);
+  user-select: none;
 
   @include hover-focus {
     color: $color-deep-sky-blue;
@@ -226,10 +224,10 @@
 }
 
 .page-header__title-wrap {
-  padding: 0 96px;
+  padding: 0 96px 50px;
 
   @include vp-1023 {
-    padding: 0;
+    padding: 0 0 50px;
   }
 }
 
