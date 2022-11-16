@@ -649,7 +649,7 @@ button,
   width: 100%;
   min-height: 658px;
   position: relative;
-  background-image: url("../img/header-bg-desktop.png");
+  background-image: url("../img/header-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1028,7 +1028,7 @@ button,
 }
 
 .catalog__item {
-  min-height: 386px;
+  height: 386px;
 }
 
 .catalog__item.focus-visible:focus .catalog__card-content {
@@ -1126,7 +1126,8 @@ button,
 }
 
 .catalog__card-content dl {
-  margin: 0 0 6px;
+  margin: 0 0 10px;
+  overflow-y: scroll;
 }
 
 .catalog__card-content dt {
@@ -1383,7 +1384,7 @@ button,
 .contacts__map {
   width: 48.275862069%;
   height: 306px;
-  background: url("../img/map-desk.png");
+  background: url("../img/map-desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1492,7 +1493,7 @@ button,
 
   .page-header {
     min-height: 638px;
-    background-image: url("../img/header-bg-tablet.png");
+    background-image: url("../img/header-bg-tablet.jpg");
     background-position: 50% 0;
   }
 
@@ -1804,7 +1805,7 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: url("../img/header-bg-tablet@2x.png");
+    background-image: url("../img/header-bg-tablet@2x.jpg");
   }
 }
 
@@ -1815,7 +1816,7 @@ button,
 
   .page-header {
     min-height: 500px;
-    background-image: url("../img/header-bg-mobile.png");
+    background-image: url("../img/header-bg-mobile.jpg");
     background-position: 45% 0;
   }
 
@@ -2203,17 +2204,17 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: url("../img/header-bg-mobile@2x.png");
+    background-image: url("../img/header-bg-mobile@2x.jpg");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: url("../img/header-bg-desktop@2x.png");
+    background-image: url("../img/header-bg-desktop@2x.jpg");
   }
 
   .contacts__map {
-    background-image: url("../img/map-desk@2x.png");
+    background-image: url("../img/map-desk@2x.jpg");
   }
 }
 

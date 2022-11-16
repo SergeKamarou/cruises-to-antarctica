@@ -51,7 +51,7 @@
 }
 
 .catalog__item {
-  min-height: 386px;
+  height: 386px;
 
   @include hover-focus {
     .catalog__card-content {
@@ -203,7 +203,8 @@
   }
 
   dl {
-    margin: 0 0 6px;
+    margin: 0 0 10px;
+    overflow-y: scroll;
   }
 
   dt {

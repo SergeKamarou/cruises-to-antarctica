@@ -18,13 +18,13 @@
 .contacts__map {
   width: calc(560 / 1160 * 100%);
   height: 306px;
-  background: url("../img/map-desk.png");
+  background: url("../img/map-desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include retina {
-    background-image: url("../img/map-desk@2x.png");
+    background-image: url("../img/map-desk@2x.jpg");
   }
 
   @include vp-1023 {
