@@ -2,13 +2,32 @@
   width: 100%;
   min-height: 658px;
   position: relative;
+  background-image: url("../img/header-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/header-bg-desktop@2x.png");
+  }
 
   @include vp-1023 {
     min-height: 638px;
+    background-image: url("../img/header-bg-tablet.png");
+    background-position: 50% 0;
+
+    @include retina {
+      background-image: url("../img/header-bg-tablet@2x.png");
+    }
   }
 
   @include vp-767 {
     min-height: 500px;
+    background-image: url("../img/header-bg-mobile.png");
+    background-position: 45% 0;
+
+    @include retina {
+      background-image: url("../img/header-bg-mobile@2x.png");
+    }
   }
 }
 
