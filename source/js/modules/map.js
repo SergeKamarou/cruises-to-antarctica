@@ -2,25 +2,32 @@ const mapContainer = document.querySelector('[data-map]');
 
 let mapLoaded = true;
 
-const loadMap = () => {
+function loadMap() {
   if (mapLoaded) {
     mapLoaded = false;
     ymaps.ready(init);
+    mapContainer.removeEventListener('click', loadMap, mapListenerOptions);
+    mapContainer.removeEventListener('mouseover', loadMap, mapListenerOptions);
+    mapContainer.removeEventListener('touchstart', loadMap, mapListenerOptions);
+    mapContainer.removeEventListener('touchmove', loadMap, mapListenerOptions);
   }
+}
+
+const mapListenerOptions = {
+  once: true,
+  passive: true,
+  capture: true,
 };
 
 const initMap = () => {
-  mapContainer.addEventListener('click', loadMap);
-  mapContainer.addEventListener('mouseover', loadMap);
-  mapContainer.addEventListener('touchstart', loadMap);
-  mapContainer.addEventListener('touchmove', loadMap);
+  mapContainer.addEventListener('click', loadMap, mapListenerOptions);
+  mapContainer.addEventListener('mouseover', loadMap, mapListenerOptions);
+  mapContainer.addEventListener('touchstart', loadMap, mapListenerOptions);
+  mapContainer.addEventListener('touchmove', loadMap, mapListenerOptions);
 };
 
 function init() {
   const map = new ymaps.Map('map', {
-    once: true,
-    passive: true,
-    capture: true,
     center: [59.93868425386648, 30.3230366711649],
     zoom: 15,
   }, {
