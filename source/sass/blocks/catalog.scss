@@ -62,6 +62,7 @@
   &:focus-within {
     .catalog__card-content {
       scale: 1;
+
     }
   }
 }
@@ -204,7 +205,7 @@
 
   dl {
     margin: 0 0 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   dt {

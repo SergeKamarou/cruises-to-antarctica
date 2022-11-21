@@ -647,35 +647,20 @@ button,
 
 .page-header {
   width: 100%;
-  min-height: 658px;
+  min-height: 650px;
   position: relative;
+  background-color: #1566c4;
   background-image: url("../img/header-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .page-header__logo {
   color: #f9fbfd;
   fill: currentColor;
   z-index: 1;
-}
-
-.page-header__background-wrap {
-  width: 100%;
-  height: 100%;
-  background-color: #1566c4;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.page-header__background-wrap img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .page-header__nav {
@@ -1127,7 +1112,7 @@ button,
 
 .catalog__card-content dl {
   margin: 0 0 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .catalog__card-content dt {
@@ -1833,12 +1818,6 @@ button,
     order: -1;
   }
 
-  .page-header__background-wrap img {
-    height: 113%;
-    -o-object-position: 45.6% 0;
-    object-position: 45.6% 0;
-  }
-
   .page-header__nav {
     width: 89%;
     margin-left: auto;
@@ -2189,6 +2168,7 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    background: url("../img/map-mobile.jpg");
   }
 
   .contacts__text-wrap {
@@ -2211,10 +2191,6 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
     background-image: url("../img/header-bg-desktop@2x.jpg");
-  }
-
-  .contacts__map {
-    background-image: url("../img/map-desk@2x.jpg");
   }
 }
 
