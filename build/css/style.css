@@ -849,8 +849,8 @@ button,
 }
 
 .travels {
-  min-height: 558px;
-  padding-top: 112px;
+  min-height: 566px;
+  padding-top: 120px;
   padding-bottom: 100px;
 }
 
@@ -1013,7 +1013,7 @@ button,
 }
 
 .catalog__item {
-  height: 386px;
+  aspect-ratio: 260/386;
 }
 
 .catalog__item.focus-visible:focus .catalog__card-content {
@@ -1677,6 +1677,10 @@ button,
     column-gap: 4.6296296296%;
   }
 
+  .catalog__item {
+    aspect-ratio: 309/386;
+  }
+
   .catalog__card h3 {
     bottom: 26px;
     left: 35px;
@@ -2051,6 +2055,10 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0 10px;
+  }
+
+  .catalog__item {
+    aspect-ratio: 270/386;
   }
 
   .catalog__card h3 {

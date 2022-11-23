@@ -51,7 +51,7 @@
 }
 
 .catalog__item {
-  height: 386px;
+  aspect-ratio: 260/386;
 
   @include hover-focus {
     .catalog__card-content {
@@ -64,6 +64,14 @@
       scale: 1;
 
     }
+  }
+
+  @include vp-1023 {
+    aspect-ratio: 309/386;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 270/386;
   }
 }
 
