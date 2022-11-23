@@ -20,10 +20,12 @@ const mapListenerOptions = {
 };
 
 const initMap = () => {
-  mapContainer.addEventListener('click', loadMap, mapListenerOptions);
-  mapContainer.addEventListener('mouseover', loadMap, mapListenerOptions);
-  mapContainer.addEventListener('touchstart', loadMap, mapListenerOptions);
-  mapContainer.addEventListener('touchmove', loadMap, mapListenerOptions);
+  setTimeout(() => {
+    mapContainer.addEventListener('click', loadMap, mapListenerOptions);
+    mapContainer.addEventListener('mouseover', loadMap, mapListenerOptions);
+    mapContainer.addEventListener('touchstart', loadMap, mapListenerOptions);
+    mapContainer.addEventListener('touchmove', loadMap, mapListenerOptions);
+  }, 2000);
 };
 
 function init() {
