@@ -881,15 +881,7 @@ button,
 }
 
 .travels__img-wrap {
-  height: 301px;
   overflow: hidden;
-}
-
-.travels__img-wrap img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .advantages {
@@ -1392,7 +1384,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 21px;
-  padding: 0 0 0 28px;
+  padding: 0 20px 0 28px;
   position: relative;
 }
 
@@ -1412,7 +1404,8 @@ button,
   font-size: 16px;
   line-height: 24px;
   position: relative;
-  padding: 0 0 0 28px;
+  padding: 0 20px 0 28px;
+  display: block;
 }
 
 .contacts__phone::before {
@@ -1597,17 +1590,7 @@ button,
   }
 
   .travels__img-wrap {
-    height: 174px;
     padding-right: 5px;
-  }
-
-  .travels__img-wrap img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: none;
-    object-fit: none;
-    -o-object-position: 81% 44%;
-    object-position: 81% 44%;
   }
 
   .advantages__wrap {
@@ -1998,7 +1981,6 @@ button,
 
   .travels__img-wrap {
     padding: 0;
-    height: 155px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2009,10 +1991,8 @@ button,
   }
 
   .travels__img-wrap img {
+    max-width: 500px;
     width: 100%;
-    height: auto;
-    -o-object-position: 82% 44%;
-    object-position: 82% 44%;
   }
 
   .advantages__wrap {

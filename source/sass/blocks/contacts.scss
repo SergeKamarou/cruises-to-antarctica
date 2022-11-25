@@ -63,7 +63,7 @@
 .contacts__address {
   @include font(400, 16px, 24px);
   margin: 0 0 21px;
-  padding: 0 0 0 28px;
+  padding: 0 20px 0 28px;
   position: relative;
 
   &::before {
@@ -89,7 +89,8 @@
 .contacts__phone {
   @include font(400, 16px, 24px);
   position: relative;
-  padding: 0 0 0 28px;
+  padding: 0 20px 0 28px;
+  display: block;
 
   &::before {
     content: "";
