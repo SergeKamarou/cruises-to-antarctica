@@ -1405,7 +1405,7 @@ button,
   line-height: 24px;
   position: relative;
   padding: 0 20px 0 28px;
-  display: block;
+  display: inline-block;
 }
 
 .contacts__phone::before {
